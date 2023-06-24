@@ -1,8 +1,11 @@
 .form {
   display: flex;
-  flex-direction:column;
-  width: 40vw;
-  margin: 3rem;
+  flex-direction: column;
+  width: 50vw;
+}
+
+textarea {
+  font-size: 20px;
 }
 
 .notes {
@@ -14,11 +17,11 @@
 }
 
 .note-container {
-  width: 20rem;
+  width: 25rem;
   height: 20rem;
   font-size: 2rem;
   margin: 1rem;
-  border: 1px solid #000;
+  border: 2px solid #000;
   position: relative;
   overflow: auto;
 }
@@ -32,13 +35,13 @@
   cursor: pointer;
   background: #fff;
   border-radius: 50%;
-  border-width: 0;
-  overflow: hidden;
-  transition: .2s linear;
+  border-width: 2px;
+  transition: .3s linear;
   outline: inherit;
-  margin: 1.5rem;
-  margin-left: 0.3rem;
+  margin: 1.2rem;
   margin-top: 2rem;  
+  width: 40px;
+  height: 40px;
 }
 
 .note-close {
@@ -46,11 +49,10 @@
   border: none;
   outline: inherit;
   margin: 0;
-  width: 2vw;
   margin-left: 38%;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }
 
 .update:hover, .note-close:hover, .send:hover  {
@@ -58,7 +60,7 @@
 }
 
 .update:active, .note-close:active, .send:active {
-  border-radius: 50%;
+ 
   display: inline-block;
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
@@ -70,15 +72,13 @@ span {
 
 img {
   display: block;
-  padding: 0;
-  margin: 0;
   width: 20px;
-  height: 25px;
+  height: 20px;
   margin: 0 auto;
 }
 
 .send {
-  margin: 0;
-  width: 35px;
-  height: 35px;
+  margin-top: 90px;
+  width: 46px;
+  height: 40px;
 }
