@@ -1,7 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 50vw;
 }
 
 textarea {
@@ -21,7 +20,7 @@ textarea {
   height: 20rem;
   font-size: 2rem;
   margin: 1rem;
-  border: 2px solid #000;
+  border: 1px solid #000;
   position: relative;
   overflow: auto;
 }
@@ -32,11 +31,11 @@ textarea {
 }
 
 .update, .note-close, .send {
+  border: none;
   cursor: pointer;
   background: #fff;
   border-radius: 50%;
-  border-width: 2px;
-  transition: .3s linear;
+  transition: .1s linear;
   outline: inherit;
   margin: 1.2rem;
   margin-top: 2rem;  
@@ -56,13 +55,14 @@ textarea {
 }
 
 .update:hover, .note-close:hover, .send:hover  {
-  box-shadow: 2px 2px 5px rgba(5, 4, 3, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.3), 1px 1px 8px rgba(255, 255, 255, 1);
 }
 
 .update:active, .note-close:active, .send:active {
  
   display: inline-block;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 5px rgba(34, 34, 34, 0.3), 1px 1px 8px rgba(255, 255, 255, 1);
+
 }
 
 span {
@@ -79,6 +79,4 @@ img {
 
 .send {
   margin-top: 90px;
-  width: 46px;
-  height: 40px;
 }
